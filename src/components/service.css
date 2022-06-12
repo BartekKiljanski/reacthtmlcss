@@ -1,0 +1,47 @@
+.box {
+  position: relative;
+  top: 170px;
+  display: grid;
+  grid-template-columns: repeat(3, 193px);
+  grid-template-rows: repeat(3, 193px);
+  justify-content: center;
+  align-content: center;
+  gap: 63px;
+  text-align: center;
+  transition: transform initial 0.5s;
+  cursor: pointer;
+}
+.wheel {
+  position: absolute;
+  width: 37.65px;
+  height: 37.65px;
+
+  background: #e07a64;
+  border-radius: 50%;
+  left: 110px;
+  top: -10px;
+  z-index: 1;
+}
+
+.u1,
+.u2,
+.u3,
+.u4,
+.u5,
+.u6 {
+  top: 300px;
+  align-items: center;
+  text-align: center;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(191, 179, 105, 0.7346288857339811) 100%
+  );
+  transition: all 0.5s linear;
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
