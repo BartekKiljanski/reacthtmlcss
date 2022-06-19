@@ -19,8 +19,7 @@ const header = () => {
             <a href="#oferta"> oferta</a>
           </li>
           <li>
-            <a className="kontakt" href="#">
-              {" "}
+            <a className="kontakt" href="#a">
               kontakt
             </a>
           </li>
