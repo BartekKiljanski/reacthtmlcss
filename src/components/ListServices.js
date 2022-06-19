@@ -29,9 +29,9 @@ const ListServices = () => {
     },
   ];
   return (
-    <div class="oferta" id="oferta">
-      <p class="firma">Czym zajmuje się nasza firma ?</p>
-      <div class="box">
+    <div className="oferta" id="oferta">
+      <p className="firma">Czym zajmuje się nasza firma ?</p>
+      <div className="box">
         {services.map((service) => {
           return <Service name={service.name} isNew={service.isNew} />;
         })}
