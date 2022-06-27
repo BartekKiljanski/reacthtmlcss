@@ -196,7 +196,7 @@ p.spec {
 }
 .box {
   position: relative;
-  top: 170px;
+
   display: grid;
   grid-template-columns: repeat(3, 193px);
   grid-template-rows: repeat(3, 193px);
@@ -209,25 +209,21 @@ p.spec {
 }
 .wheel {
   position: absolute;
-  width: 37.65px;
-  height: 37.65px;
+  width: 40px;
+  height: 40px;
 
   background: #e07a64;
   border-radius: 50%;
-  left: 110px;
-  top: -10px;
+  left: -20px;
+  top: -20px;
   z-index: 1;
 }
-
-.u1,
-.u2,
-.u3,
-.u4,
-.u5,
-.u6 {
-  top: 300px;
+.u1 {
+  position: relative;
+  display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   background: rgb(34, 193, 195);
   background: radial-gradient(
     circle,
@@ -237,9 +233,6 @@ p.spec {
   transition: all 0.5s linear;
   margin: 0;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .p1,

@@ -9,7 +9,7 @@ const ListServices = () => {
     },
     {
       name: "MECHANIKA I AUTO NAPRAWA",
-      isNew: false,
+      isNew: true,
     },
     {
       name: "HAMOWANIA 4x4",
@@ -32,8 +32,10 @@ const ListServices = () => {
     <div className="oferta" id="oferta">
       <p className="firma">Czym zajmuje się nasza firma ?</p>
       <div className="box">
-        {services.map((service) => {
-          return <Service name={service.name} isNew={service.isNew} />;
+        {services.map((service, index) => {
+          return (
+            <Service name={service.name} isNew={service.isNew} key={index} />
+          );
         })}
       </div>
     </div>
